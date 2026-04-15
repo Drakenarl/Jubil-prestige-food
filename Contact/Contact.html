@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jubilée Prestige Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Jubilée Prestige Food</h1>
+        <p>Des mets africains & une patisserie hors du commun</p>
+    </header>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="../Menu/Menu.html">Menu</a></li>
+      <li><a href="Contact/Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+    <main class="page-contact">
+
+        <div class="contact-intro">
+            <h2>Contactez-nous</h2>
+            <p>Une commande, une question, un événement à organiser ? On est là.</p>
+        </div>
+
+        <div class="contact-wrapper">
+
+            <!-- Bloc infos pratiques -->
+            <div class="infos-bloc">
+
+                <div class="info-carte">
+                    <div class="info-icone">📞</div>
+                    <div class="info-texte">
+                        <h3>Téléphone</h3>
+                        <p>01 69 69 07 04</p>
+                    </div>
+                </div>
+
+                <div class="info-carte">
+                    <div class="info-icone">📍</div>
+                    <div class="info-texte">
+                        <h3>Adresse</h3>
+                        <p>Cotonou, Bénin</p>
+                    </div>
+                </div>
+
+                <div class="info-carte">
+                    <div class="info-icone">🕐</div>
+                    <div class="info-texte">
+                        <h3>Horaires</h3>
+                        <p>Lun – Sam : 08h à 21h</p>
+                        <p>Dimanche : 10h à 18h</p>
+                    </div>
+                </div>
+
+                <div class="info-carte">
+                    <div class="info-icone">✉️</div>
+                    <div class="info-texte">
+                        <h3>Email</h3>
+                        <p>jubilee.prestige@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Formulaire de contact -->
+            <div class="formulaire-bloc">
+                <h3>Envoyez-nous un message</h3>
+
+                <div class="champ">
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Ex : Karl BOYISSOU">
+                </div>
+
+                <div class="champ">
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Ex : 97 00 00 00">
+                </div>
+
+                <div class="champ">
+                    <label for="sujet">Sujet</label>
+                    <select id="sujet" name="sujet">
+                        <option value="">-- Choisissez --</option>
+                        <option value="commande">Passer une commande</option>
+                        <option value="evenement">Organiser un événement</option>
+                        <option value="info">Demande d'informations</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="champ">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Décrivez votre demande..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-envoyer">Envoyer le message</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>Contact : 01 69 69 07 04</p>
+    </footer>
+
+</body>
+</html>
