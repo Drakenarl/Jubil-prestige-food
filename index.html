@@ -5,117 +5,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jubilée Prestige Food</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="header">
-    <h1>Jubilée Prestige Food</h1>
-    <p>Des mets africains &amp; une pâtisserie hors du commun</p>
-  </header>
-
-  <nav class="nav">
-    <ul>
-      <li><a href="index.html" class="active">Accueil</a></li>
-      <li><a href="Menu/Menu.html">Menu</a></li>
-      <li><a href="Contact/Contact.html">Contact</a></li>
-    </ul>
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4z"/><path d="M12 6v2M12 16v2M6 12h2M16 12h2"/></svg>
+        Jubilée Prestige Food
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="Menu/Menu.html">Menu</a></li>
+        <li><a href="Contact/Contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+  <!-- HERO -->
+  <header class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h2>Cuisine africaine authentique<br>&amp; pâtisserie d'exception</h2>
-      <p>Livraison &amp; commande à emporter à Cotonou</p>
-      <div class="hero-buttons">
-        <a href="Menu/Menu.html" class="btn-primary">Voir le Menu</a>
-        <a href="https://wa.me/22969690704" target="_blank" class="btn-whatsapp">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Commander sur WhatsApp
+      <p class="hero-label">Cotonou, Bénin</p>
+      <h1>Cuisine africaine<br>&amp; pâtisserie d'exception</h1>
+      <p class="hero-sub">Plats préparés chaque jour avec des produits frais, commande &amp; livraison sur WhatsApp</p>
+      <div class="hero-actions">
+        <a href="Menu/Menu.html" class="btn-primary">Découvrir le menu</a>
+        <a href="https://wa.me/22969690704" target="_blank" class="btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Commander
         </a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- CATEGORIES SECTION -->
-  <section class="categories">
-    <h2 class="section-title">Ce que nous proposons</h2>
-    <div class="container">
-      <div class="card">
-        <div class="card-icon">🍛</div>
-        <h3>Plats africains</h3>
-        <p>Riz au gras, alloco, pâte sauce arachide et bien d'autres saveurs locales authentiques</p>
-        <a href="Menu/Menu.html" class="btn-card">Voir les plats →</a>
-      </div>
-      <div class="card">
-        <div class="card-icon">🎂</div>
-        <h3>Gâteaux Prestige</h3>
-        <p>Des gâteaux sur mesure pour vos anniversaires, mariages et événements spéciaux</p>
-        <a href="https://wa.me/22969690704" target="_blank" class="btn-card">Commander →</a>
-      </div>
-      <div class="card">
-        <div class="card-icon">🥐</div>
-        <h3>Pâtisseries &amp; Desserts</h3>
-        <p>Croissants, donuts, macarons, cheesecake — douceur et plaisir garantis</p>
-        <a href="Menu/Menu.html" class="btn-card">Voir les desserts →</a>
+  <!-- OFFRES -->
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Ce que nous proposons</h2>
+      <div class="cards">
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+          </div>
+          <h3>Plats africains</h3>
+          <p>Riz au gras, alloco, pâte sauce arachide et bien d'autres saveurs locales authentiques.</p>
+          <a href="Menu/Menu.html" class="link-arrow">Voir les plats
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 00-2 2v1a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M12 7V4"/><path d="M6 12v7a1 1 0 001 1h10a1 1 0 001-1v-7"/></svg>
+          </div>
+          <h3>Gâteaux Prestige</h3>
+          <p>Gâteaux sur mesure pour vos anniversaires, mariages et événements spéciaux.</p>
+          <a href="https://wa.me/22969690704" target="_blank" class="link-arrow">Commander
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"/><path d="M12 8v1M12 15v1M8 12h1M15 12h1"/></svg>
+          </div>
+          <h3>Pâtisseries &amp; Desserts</h3>
+          <p>Croissants, donuts, macarons, cheesecake — douceur et plaisir garantis.</p>
+          <a href="Menu/Menu.html" class="link-arrow">Voir les desserts
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- POURQUOI NOUS -->
-  <section class="why-us">
-    <h2 class="section-title">Pourquoi nous choisir ?</h2>
-    <div class="why-grid">
-      <div class="why-item">
-        <span class="why-icon">🌿</span>
-        <h4>Ingrédients frais</h4>
-        <p>Nous cuisinons chaque jour avec des produits frais et locaux</p>
-      </div>
-      <div class="why-item">
-        <span class="why-icon">🚀</span>
-        <h4>Livraison rapide</h4>
-        <p>Commandez sur WhatsApp et recevez votre repas rapidement à Cotonou</p>
-      </div>
-      <div class="why-item">
-        <span class="why-icon">👨‍🍳</span>
-        <h4>Cuisine maison</h4>
-        <p>Des recettes authentiques préparées avec passion et savoir-faire</p>
-      </div>
-      <div class="why-item">
-        <span class="why-icon">🎉</span>
-        <h4>Événements &amp; traiteur</h4>
-        <p>Nous gérons vos réceptions, anniversaires et cérémonies de A à Z</p>
+  <section class="section section--alt">
+    <div class="section-inner">
+      <h2 class="section-title">Pourquoi nous choisir</h2>
+      <div class="why-grid">
+
+        <div class="why-item">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Ingrédients frais</h4>
+          <p>Produits frais et locaux, cuisinés chaque jour.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>Livraison rapide</h4>
+          <p>Commandez sur WhatsApp, livraison à Cotonou.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h4>Cuisine maison</h4>
+          <p>Recettes authentiques préparées avec passion.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h4>Traiteur &amp; événements</h4>
+          <p>Réceptions, anniversaires, cérémonies gérées de A à Z.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- HORAIRES -->
-  <section class="horaires">
-    <div class="horaires-inner">
+  <section class="section section--dark">
+    <div class="section-inner horaires-inner">
       <div class="horaires-text">
-        <h2>Nos horaires</h2>
-        <ul>
-          <li><span>Lundi – Samedi</span> <strong>08h00 – 21h00</strong></li>
-          <li><span>Dimanche</span> <strong>10h00 – 18h00</strong></li>
-        </ul>
-        <p class="horaires-note">📍 Cotonou, Bénin — Livraison disponible</p>
+        <h2>Horaires d'ouverture</h2>
+        <table class="horaires-table">
+          <tr><td>Lundi – Samedi</td><td><strong>08h00 – 21h00</strong></td></tr>
+          <tr><td>Dimanche</td><td><strong>10h00 – 18h00</strong></td></tr>
+        </table>
+        <p class="horaires-note">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cotonou, Bénin — Livraison disponible
+        </p>
       </div>
       <div class="horaires-cta">
-        <p>Une commande ? Contactez-nous directement sur WhatsApp !</p>
-        <a href="https://wa.me/22969690704" target="_blank" class="btn-primary">Écrire sur WhatsApp</a>
+        <p>Pour toute commande, écrivez-nous directement.</p>
+        <a href="https://wa.me/22969690704" target="_blank" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Écrire sur WhatsApp
+        </a>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-col">
-        <h4>Jubilée Prestige Food</h4>
-        <p>Des mets africains &amp; une pâtisserie hors du commun à Cotonou, Bénin.</p>
+        <span class="footer-brand">Jubilée Prestige Food</span>
+        <p>Cuisine africaine authentique &amp; pâtisserie d'exception à Cotonou, Bénin.</p>
       </div>
       <div class="footer-col">
-        <h4>Liens rapides</h4>
+        <h4>Navigation</h4>
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="Menu/Menu.html">Menu</a></li>
@@ -124,20 +170,43 @@
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>📞 01 69 69 07 04</p>
-        <p>✉️ jubilee.prestige@gmail.com</p>
-        <p>📍 Cotonou, Bénin</p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.98a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          01 69 69 07 04
+        </p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          jubilee.prestige@gmail.com
+        </p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cotonou, Bénin
+        </p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Jubilée Prestige Food — Tous droits réservés</p>
+      &copy; 2025 Jubilée Prestige Food — Tous droits réservés
     </div>
   </footer>
 
-  <!-- BOUTON WHATSAPP FLOTTANT -->
-  <a href="https://wa.me/22969690704" target="_blank" class="whatsapp-float" title="Commander sur WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <!-- WHATSAPP FLOTTANT -->
+  <a href="https://wa.me/22969690704" target="_blank" class="wa-float" title="Commander sur WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.classList.toggle('open');
+    });
+    // Ferme le menu au clic sur un lien
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+    }));
+  </script>
 
 </body>
 </html>
