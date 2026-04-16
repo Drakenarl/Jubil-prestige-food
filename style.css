@@ -135,6 +135,13 @@ nav a.active {
     margin-bottom: 10px;
 }
 
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
 button {
     background: orange;
     color: white;

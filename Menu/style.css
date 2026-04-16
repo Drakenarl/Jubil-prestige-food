@@ -220,6 +220,12 @@ nav a.active {
     margin-top: 40px;
     font-size: 14px;
 }
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
 
 /*RESPONSIVE
    La grille s'adapte selon la largeur d'écran */

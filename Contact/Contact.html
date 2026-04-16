@@ -71,33 +71,35 @@
             <div class="formulaire-bloc">
                 <h3>Envoyez-nous un message</h3>
 
-                <div class="champ">
-                    <label for="nom">Votre nom</label>
-                    <input type="text" id="nom" name="nom" placeholder="Ex : Karl BOYISSOU">
-                </div>
+                <form id="contactForm">
+                    <div class="champ">
+                        <label for="nom">Votre nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Ex : Karl BOYISSOU" required>
+                    </div>
 
-                <div class="champ">
-                    <label for="telephone">Téléphone</label>
-                    <input type="tel" id="telephone" name="telephone" placeholder="Ex : 97 00 00 00">
-                </div>
+                    <div class="champ">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="Ex : 97 00 00 00" required>
+                    </div>
 
-                <div class="champ">
-                    <label for="sujet">Sujet</label>
-                    <select id="sujet" name="sujet">
-                        <option value="">-- Choisissez --</option>
-                        <option value="commande">Passer une commande</option>
-                        <option value="evenement">Organiser un événement</option>
-                        <option value="info">Demande d'informations</option>
-                        <option value="autre">Autre</option>
-                    </select>
-                </div>
+                    <div class="champ">
+                        <label for="sujet">Sujet</label>
+                        <select id="sujet" name="sujet" required>
+                            <option value="">-- Choisissez --</option>
+                            <option value="commande">Passer une commande</option>
+                            <option value="evenement">Organiser un événement</option>
+                            <option value="info">Demande d'informations</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
 
-                <div class="champ">
-                    <label for="message">Votre message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Décrivez votre demande..."></textarea>
-                </div>
+                    <div class="champ">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Décrivez votre demande..." required></textarea>
+                    </div>
 
-                <button type="submit" class="btn-envoyer">Envoyer le message</button>
+                    <button type="submit" class="btn-envoyer">Envoyer sur WhatsApp</button>
+                </form>
             </div>
 
         </div>
@@ -107,6 +109,22 @@
     <footer class="site-footer">
         <p>Contact : 01 69 69 07 04</p>
     </footer>
+
+    <!-- Script WhatsApp -->
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const numero = "22969690704";
+        const nom = document.getElementById("nom").value;
+        const tel = document.getElementById("telephone").value;
+        const sujet = document.getElementById("sujet").value;
+        const msg = document.getElementById("message").value;
+
+        const texte = `Nom: ${nom}%0ATéléphone: ${tel}%0ASujet: ${sujet}%0AMessage: ${msg}`;
+        const url = `https://wa.me/${numero}?text=${texte}`;
+        window.open(url, "_blank");
+      });
+    </script>
 
 </body>
 </html>
